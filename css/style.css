@@ -301,6 +301,7 @@ nav .container {
     color: #fff;
     text-align: center;
     padding: 20px;
+
 }
 
 .footer-text {
@@ -411,4 +412,36 @@ tbody tr:hover td,tbody  tr:hover th {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+td, th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.blue {
+    background-color: #c6c2fc ;
+}
+.red {
+    background-color: rgb(252, 124, 124) ;
+}
+.table-title{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #fff !important;
+    margin: 0;
+}
+.table-white {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #fff;
+    margin: 0;
+}
+.dark {
+    color: #000;
 }

@@ -6,7 +6,7 @@ body {
     padding: 0;
     background: url('../slike/bg.jpg') ;
     background-size:contain;
-    height: 100vh;   
+    height: 100%;   
 }
 /* font awesome icons */
 .fas, .fa-solid, .fa-regular, .fa-light, .fa-duotone, .fa-brands {
@@ -44,7 +44,11 @@ body {
     
     color: rgb(49,66,155);
 }
-
+.nav-link.selected {
+    background-color: #fff;
+    
+    color: rgb(49,66,155);
+}
 .row h1 {
     font-size: 3em;
     font-weight: bold;
@@ -74,7 +78,6 @@ header {
     display: flex;
     width: 100%;
     justify-content: end;
-    
     top:0;
     
 }
@@ -323,6 +326,7 @@ nav .container {
     width: 22% !important;
     margin: inherit 200px !important; 
     height: 20%;
+    
 
 
 }
@@ -345,9 +349,14 @@ nav .container {
     margin-bottom: 0;
 }
 .form-container {
-    background: white ;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0, 0);
     border: 1px solid #ccc;
-    box-shadow: 0px 0px 15px #ccc;
+    box-shadow: 0px 0px 15px #acacac;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .form-container .content-paragraph {
     font-size: 1.2em;
@@ -377,4 +386,29 @@ label.kontakt-text {
 #mapPopup b{
     font-weight: bold;
     font-size: 1.2em;
+}
+/* table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.table tbody tr td ,.table tbody tr th {
+    transition: all 0.1s ease-in-out;
+}
+tr.selected td, tr.selected th {
+    background-color: rgb(151, 151, 253);
+}
+tbody tr:hover td,tbody  tr:hover th {
+    background-color: rgb(101, 101, 255);
+}
+.embed-container {
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0, 0);
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 15px #acacac;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

@@ -4,8 +4,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; ;
-    height: 100%;
+    background: url('../slike/bg.jpg') ;
+    background-size:contain;
+    height: 100vh;   
 }
 /* font awesome icons */
 .fas, .fa-solid, .fa-regular, .fa-light, .fa-duotone, .fa-brands {
@@ -60,6 +61,7 @@ body {
     background-color: lightgreen;
 }
 .navbar {
+    
     width: 100%;
     justify-content: flex-start;
     position: sticky;
@@ -68,11 +70,19 @@ body {
     background-color: rgba(49,66,155, 0.849);
 }
 header {
+    background-color: #fff;
     display: flex;
     width: 100%;
     justify-content: end;
+    
+    top:0;
+    
 }
-
+.ab-top {
+    position:absolute;
+    top:0;
+    width: 100%;
+}
 .row, .container{
     max-width:100%;
 }
@@ -124,7 +134,8 @@ nav .container {
     width: 95%;
     text-align:center;
     padding: 20px;
-    background: linear-gradient(rgb(65, 84, 182), rgb(49,66,155));
+    background: linear-gradient(90deg, rgb(60, 88, 226), rgba(22, 44, 155, 0) 1% 99%, rgb(60, 88, 226)), linear-gradient(rgb(60, 88, 226), rgb(22, 44, 155) 10% 90%, rgb(60, 88, 226));
+    
     border-radius: 10px;
     margin-top: 20px;
     
@@ -357,4 +368,13 @@ label.kontakt-text {
     margin: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+/* zemlevid */
+#map { height: 800px; }
+.leaflet-popup-content-wrapper {
+    text-align: center !important;
+}
+#mapPopup b{
+    font-weight: bold;
+    font-size: 1.2em;
 }

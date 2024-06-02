@@ -445,3 +445,37 @@ td, th {
 .dark {
     color: #000;
 }
+
+
+/* galerija */
+#galerija {
+    width: 610px;
+    margin: 0 auto;
+    
+}
+
+#galerija h1 {
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#galerija img {
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);  /* Ensures the images are at their normal size initially */
+    opacity: 1;  /* Ensures the images are fully opaque initially */
+    margin-top: 5px;
+}
+
+#galerija:hover img:not(:hover) {
+    transform: scale(0.9);
+    opacity: 0.5;
+    z-index: -100;
+}
+
+#galerija img:hover {
+    transform: scale(1.2);
+    z-index: 50;
+}
